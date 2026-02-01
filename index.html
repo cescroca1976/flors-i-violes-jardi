@@ -1,0 +1,1551 @@
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Dashboard Jardí Palautordera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2d5a27;
+            --accent: #e67e22;
+            --bg: #f4f7f6;
+            --card: #ffffff;
+            --text: #333;
+        }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .zone-section {
+            margin-bottom: 50px;
+        }
+        .zone-title {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            color: var(--primary);
+            font-size: 2em;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .flower-card {
+            background: var(--card);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .flower-card:hover {
+            transform: translateY(-5px);
+        }
+        .image-container {
+            position: relative;
+            height: 200px;
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            background: #eee;
+        }
+        .image-container img {
+            height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+            scroll-snap-align: start;
+        }
+        .content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .content h3 {
+            margin: 0 0 10px 0;
+            color: var(--primary);
+        }
+        .content p {
+            font-size: 0.9em;
+            color: #666;
+            height: 40px;
+            overflow: hidden;
+        }
+        .buy-btn {
+            display: block;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            padding: 12px;
+            margin: 0 20px 20px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .buy-btn:hover {
+            background: #1e3f1b;
+        }
+        .nav-sticky {
+            position: sticky;
+            top: 0;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 100;
+            text-align: center;
+        }
+        .nav-sticky a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jardí de Santa Maria de Palautordera</h1>
+        <p>Proposta de 125 Varietats de Flors per a Primavera</p>
+    </header>
+
+    <div class="nav-sticky">
+        <a href="#zone0">ZONA 1</a><a href="#zone1">ZONA 2</a><a href="#zone2">ZONA 3</a><a href="#zone3">ZONA 4</a><a href="#zone4">ZONA 5</a>
+    </div>
+
+    <div class="container">
+        
+        <div class="zone-section" id="zone0">
+            <h2 class="zone-title">ZONA 1: OMBRA (Ombra total o molta humitat)</h2>
+            <div class="grid">
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Bigleaf_Hydrangea_Hydrangea_macrophylla_%27Tokyo_Delight%27_Flowers_3008px.jpg" alt="Hortènsia (*Hydrangea macrophylla*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Bigleaf_Hydrangea_Hydrangea_macrophylla_%27Tokyo_Delight%27_Pink_3008px.jpg" alt="Hortènsia (*Hydrangea macrophylla*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Hydrangea_macrophylla_-_Hortensia_hydrangea.jpg" alt="Hortènsia (*Hydrangea macrophylla*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Hortènsia (*Hydrangea macrophylla*)</h3>
+                        <p>Clàssica de les masies catalanes. Prefereix sòls àcids i molta aigua.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=hydrangea+macrophylla+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Camellia_japonica_NBG.jpg" alt="Camèlia (*Camellia japonica*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Japonica_%28IA_japonica00arno%29.pdf" alt="Camèlia (*Camellia japonica*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Japonica_%28IA_japonica00arnoiala%29.pdf" alt="Camèlia (*Camellia japonica*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Camèlia (*Camellia japonica*)</h3>
+                        <p>Floració elegant i fulla perenne. Resistent al fred del Montseny.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=camellia+japonica+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Fuchsia_%27Cymon%27_03.jpg" alt="Fúcsia (*Fuchsia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Fuchsia_%27Twinny%27._Bloeiwijze_01.jpg" alt="Fúcsia (*Fuchsia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Fuchsia_%27Twinny%27._Bloeiwijze_07.jpg" alt="Fúcsia (*Fuchsia*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Fúcsia (*Fuchsia*)</h3>
+                        <p>Coneguda com "Pendents de la reina". Flors penjants molt vistoses.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=fuchsia+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Begonia_Hardy_Flower.jpg" alt="Begònia (*Begonia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Begonia_U485_female_flower.jpg" alt="Begònia (*Begonia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Begonia_flower-.jpg" alt="Begònia (*Begonia*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Begònia (*Begonia*)</h3>
+                        <p>Molt versàtil, flors constants durant tota la primavera i estiu.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=begonia+bulbos" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Cyclamen_coum_%28d.j.b.%29_02.jpg" alt="Ciclamen (*Cyclamen*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Cyclamen_coum_in_december_25-12-2024._%28d.j.b%29.jpg" alt="Ciclamen (*Cyclamen*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Cyclamen_hederifolium_05-08-2020_%28d.j.b.%29_01.jpg" alt="Ciclamen (*Cyclamen*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Ciclamen (*Cyclamen*)</h3>
+                        <p>Ideal per a l'hivern i primavera primerenca. Suporta molt bé el fred.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=cyclamen+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Astilbe_%27Rheinland%27_01.JPG" alt="Astilbe" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Astilbe_%27Vision_in_Pink%27.jpg" alt="Astilbe" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Astilbe_flowers_spectral_comparison_Vis_UV_IR.jpg" alt="Astilbe" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Astilbe</h3>
+                        <p>Plomes de colors pastís. Li encanta l'ombra humida.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=astilbe+bulbos" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Bloemen_en_knoppen_van_Vingerhoedskruid_%28Digitalis_purpurea%29._Locatie%2C_Tuinreservaat_Jonkervallei_01.jpg" alt="Digital (*Digitalis purpurea*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Digitalis_Purpurea_R02.jpg" alt="Digital (*Digitalis purpurea*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Digitalis_purpurea_LC0118.jpg" alt="Digital (*Digitalis purpurea*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Digital (*Digitalis purpurea*)</h3>
+                        <p>Flors en forma de campana en espigues altes. Molt silvestres i boniques.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=digitalis+purpurea+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/El_mundo_del_nino%3B_%28IA_elmundodelnino00poul%29.pdf" alt="Impatiens (*Alegría de la casa*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Trial_by_Jury_%281875%29.pdf" alt="Impatiens (*Alegría de la casa*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Vida_americana_%28IA_albertovidaamer00amadrich%29.pdf" alt="Impatiens (*Alegría de la casa*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Impatiens (*Alegría de la casa*)</h3>
+                        <p>Cobreix zones d'ombra amb una varietat de colors infinita.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=impatiens+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Hosta_flower-20230730-RM-112817-2.jpg" alt="Hosta" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Hosta_seiboldii_%27Halcyon%27._24-06-2022_%28actm.%29_02.jpg" alt="Hosta" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Ontluikende_bloemknoppen_van_een_Hosta_%27June%27._21-07-2020_%28d.j.b.%29_01.jpg" alt="Hosta" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Hosta</h3>
+                        <p>Encara que es coneix per la seva fulla, té unes flors blanques o liles molt delicades.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=hosta+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Vinca-minor-flower-JR-T20-0656-0690-2020-03-28.jpg" alt="Vinca minor (*Pervinca*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Vinca_minor_2011_G2.jpg" alt="Vinca minor (*Pervinca*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Vinca_minor_2_RF.jpg" alt="Vinca minor (*Pervinca*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Vinca minor (*Pervinca*)</h3>
+                        <p>Entapissant d'ombra amb unes floretes liles precioses.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=vinca+minor+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Evening_Primrose_%28Oenothera_Biennis%29.jpg" alt="Prímula (*Primrose*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Primrose-Flower_Children-0022-8.png" alt="Prímula (*Primrose*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Primrose_flower_2.jpg" alt="Prímula (*Primrose*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Prímula (*Primrose*)</h3>
+                        <p>Una de les primeres a florir. Molt resistent i colorida.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=primula+vulgaris+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Aquilegia_columbine_magpie_cultivar_2.jpg" alt="Aquilegia (*Aquileña*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Aquilegia_formosa_1.jpg" alt="Aquilegia (*Aquileña*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Columbine_Aquilegia_%27Blue_Butterflies%27_Flower_Front_2120px.jpg" alt="Aquilegia (*Aquileña*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Aquilegia (*Aquileña*)</h3>
+                        <p>Flors amb esperons, molt elegants i de colors variats.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=aquilegia+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Lobelia_cardinalis_-_Cardinal_Flower.jpg" alt="Lobelia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Lobelia_cardinalis_-_par_Mickael_Schauli.jpg" alt="Lobelia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Lobelia_cardinalis_Belize_1.jpg" alt="Lobelia" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Lobelia</h3>
+                        <p>Ideal per a testos o bordures d'ombra. Blau intens.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=lobelia+erinus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Calceolaria_dilatata_flowers.jpg" alt="Calceolaria" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Calceolaria_tripartita_Costa_Rica.jpg" alt="Calceolaria" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Calceolaria_tripartita_kz1.JPG" alt="Calceolaria" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Calceolaria</h3>
+                        <p>Coneguda com "Sabatetes de Venus". Molt originals.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=calceolaria+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Trillium_grandiflorum_at_Backus_Woods.jpg" alt="Trillium" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Trillium_grandiflorum_at_the_North_Walker_Woods.jpg" alt="Trillium" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/White_Trillium_Trillium_grandiflorum_Flower_2613px.jpg" alt="Trillium" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Trillium</h3>
+                        <p>Flor de tres gots, típica de boscos ombrívols.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=trillium+bulbos" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Convallaria_majalis_196606759.jpg" alt="Convallaria (*Lliri de maig*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Convallaria_majalis_inflorescence_-_Keila.jpg" alt="Convallaria (*Lliri de maig*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Lelietje-van-dalen_of_meiklokje_%28Convallaria_majalis%29._14-05-2021_%28actm.%29_01.jpg" alt="Convallaria (*Lliri de maig*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Convallaria (*Lliri de maig*)</h3>
+                        <p>Petites campanes blanques molt fragants.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=convallaria+majalis+queules" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Crassula_saxifraga_flowers.jpg" alt="Saxifraga" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Saxifraga_aizoides3.jpg" alt="Saxifraga" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Saxifraga_rebunshirensis_%28flower%29.jpg" alt="Saxifraga" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Saxifraga</h3>
+                        <p>Entapissant per a rocalles a l'ombra.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=saxifraga+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Misumena_vatia_on_Pulmonaria_flower_%281%29.jpg" alt="Pulmonaria" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Misumena_vatia_on_Pulmonaria_flower_%282%29.jpg" alt="Pulmonaria" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Pulmonaria_officinalis_20180402.jpg" alt="Pulmonaria" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Pulmonaria</h3>
+                        <p>Fulles tacades i flors que canvien de rosa a blau.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=pulmonaria+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Bergenia_ciliata_flower%282%29.jpg" alt="Bergenia (*Hortènsia d'hivern*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Bergenia_ciliata_flower.jpg" alt="Bergenia (*Hortènsia d'hivern*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Bergenia_crassifolia_%27purpurea%27_%2849795861818%29.jpg" alt="Bergenia (*Hortènsia d'hivern*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Bergenia (*Hortènsia d'hivern*)</h3>
+                        <p>Fulles grans i flors roses molt matineres.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=bergenia+cordifolia+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/%28MHNT%29_Brunnera_macrophylla%2C_flowers_-_Les_Martels%2C_Giroussens_Tarn.jpg" alt="Brunnera macrophylla" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Brunnera_macrophylla_%27Jack_Frost%27%2C_Longwood_Gardens_2023_02.jpg" alt="Brunnera macrophylla" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Brunnera_macrophylla_Brunnera_wielkolistna_2017-05-01_03.jpg" alt="Brunnera macrophylla" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Brunnera macrophylla</h3>
+                        <p>Flors blaves que recorden als "No m'oblidis".</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=brunnera+macrophylla+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/IMG20240822132131_Torenia_flower.jpg" alt="Torenia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Torenia_fournieri_Flower.jpg" alt="Torenia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Torenia_fournieri_Linden_DSC_4551.jpg" alt="Torenia" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Torenia</h3>
+                        <p>La flor "desig". Ideal per a cistelles penjants a l'ombra.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=torenia+fournieri+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Anemone_hepatica_-_Flickr_-_Angela_Llop.jpg" alt="Anemone de bosc" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Annual_catalogue_of_fruit_and_ornamental_trees_and_plants%2C_bulbous_flower_roots%2C_green-house_plants%2C_etc._etc._-_%28IA_annualcatalogueo1825wmrp%29.pdf" alt="Anemone de bosc" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Surplus_list_-_Spring_1907_%28IA_CAT31288278%29.pdf" alt="Anemone de bosc" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Anemone de bosc</h3>
+                        <p>Floració blanca o lila molt fresca.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=anemone+blanda+bulbos" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/From_Yauco_to_Las_Marias.djvu" alt="Dicentra (*Cor de Maria*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/History_of_Maria_Antoinette_%28IA_historyofmariaan00abbo%29.pdf" alt="Dicentra (*Cor de Maria*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Officium_parvum_Beat%C3%A6_Virginis_Mari%C3%A6_%28IA_officiumparvumbe00cath%29.pdf" alt="Dicentra (*Cor de Maria*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Dicentra (*Cor de Maria*)</h3>
+                        <p>Flors en forma de cor que pengen d'una tija arquejada.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=dicentra+spectabilis+raiz" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/OJ_L_188_of_2023_-_CS_Czech.pdf" alt="Heleborus (*Rosa de Nadal*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/OJ_L_188_of_2023_-_HR_Croatian.pdf" alt="Heleborus (*Rosa de Nadal*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/OJ_L_188_of_2023_-_PL_Polish.pdf" alt="Heleborus (*Rosa de Nadal*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Heleborus (*Rosa de Nadal*)</h3>
+                        <p>Una de les joies del jardí d'hivern i primavera a l'ombra.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=helleborus+niger+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Beijzelde_bloemknoppen_van_Pieris_japonica_%27Bonfire%27._Locatie%2C_Tuinreservaat_Jonkervallei_01.jpg" alt="Pieris japonica" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Beijzelde_bloemknoppen_van_Pieris_japonica_%27Bonfire%27._Locatie%2C_Tuinreservaat_Jonkervallei_02.jpg" alt="Pieris japonica" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Pieris_japonica_4064.jpg" alt="Pieris japonica" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Pieris japonica</h3>
+                        <p>Arbust que treu uns raïms de floretes blanques precioses.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=pieris+japonica+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="zone-section" id="zone1">
+            <h2 class="zone-title">ZONA 2: LLUM DE TARDA (Sol de ponent)</h2>
+            <div class="grid">
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Lovely_Green_%28Meilland_2005%29_01.jpg" alt="Rosa (*Rosa Meilland*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Rosa_%27Manou_Meilland%27_02.JPG" alt="Rosa (*Rosa Meilland*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Rose%2C_Scarlet_Meillandina%2C_%E3%83%90%E3%83%A9%2C_%E3%82%B9%E3%82%AB%E3%83%BC%E3%83%AC%E3%83%83%E3%83%88_%E3%83%A1%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%87%E3%82%A3%E3%83%8A%2C_%2815266108126%29.jpg" alt="Rosa (*Rosa Meilland*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Rosa (*Rosa Meilland*)</h3>
+                        <p>La reina del jardí. Suporta bé el sol de tarda si té bon reg.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=rosal+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/01_Pelargonium_flower_close-up.jpg" alt="Gerani (*Pelargonium*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Pelargonium_2025_G1.jpg" alt="Gerani (*Pelargonium*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Pelargonium_zonale_%28Geraniaceae%29.jpg" alt="Gerani (*Pelargonium*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Gerani (*Pelargonium*)</h3>
+                        <p>Un clàssic que mai falla. Molt resistent.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=geranio+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Bloemknop_van_een_Clematis_texensis_%C2%B4Princess_Diana%C2%B4._20-07-2021_%28actm.%29.jpg" alt="Clemàtide (*Clematis*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Puawhananga_flower_%28Clematis_paniculata%29.jpg" alt="Clemàtide (*Clematis*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Zaadpluizen_van_een_Clematis_texensis_%27Princess_Diana%27._18-07-2023_%28actm.%29_02.jpg" alt="Clemàtide (*Clematis*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Clemàtide (*Clematis*)</h3>
+                        <p>Enfiladissa amb flors espectaculars.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=clematis+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/%28MHNT%29_Phlox_paniculata_famous_light_purple_-_Les_Martels%2C_Giroussens_Tarn.jpg" alt="Phlox paniculata" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Phlox_paniculata_%27Fujiyama%27_%28d.j.b.%29_01.jpg" alt="Phlox paniculata" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Phlox_paniculata_%27Fujiyama%27_Locatie_De_Kruidhof.JPG" alt="Phlox paniculata" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Phlox paniculata</h3>
+                        <p>Flors agrupades molt fragants a l'estiu.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=phlox+paniculata+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/20170926Salvia_nemorosa1.jpg" alt="Sàlvia (*Salvia nemorosa*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Salvia_nemorosa_2_RF.jpg" alt="Sàlvia (*Salvia nemorosa*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Salvia_nemorosa_RF.jpg" alt="Sàlvia (*Salvia nemorosa*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Sàlvia (*Salvia nemorosa*)</h3>
+                        <p>Espigues de color blau o lila. Molt atractiva per a les abelles.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=salvia+nemorosa+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Campanula_rotundifolia_%28plant%29.jpg" alt="Campaneta (*Campanula*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Campanula_rotundifolia_-_bellflower_-_bluebell_-_Glockenblume_03.jpg" alt="Campaneta (*Campanula*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Campanula_with_waterdrops.jpg" alt="Campaneta (*Campanula*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Campaneta (*Campanula*)</h3>
+                        <p>Flors en forma de campana, blaves o blanques.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=campanula+persicifolia+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/%28MHNT%29_Heuchera_micrantha_flowers.jpg" alt="Heuchera" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Heuchera_richardsonii_%28Northern_Exposure_Purple%29.jpg" alt="Heuchera" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Heuchera_richardsonii_2-eheep_%285097879370%29.jpg" alt="Heuchera" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Heuchera</h3>
+                        <p>Fullatge espectacular amb flors petites en tija.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=heuchera+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Delphinium_elatum_kz01.jpg" alt="Delphinium (*Espolsa-sac*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/HMS_Delphinium_%28K77%29.jpg" alt="Delphinium (*Espolsa-sac*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/HMS_Delphinium_%28K77%29_ship%27s_bell.jpg" alt="Delphinium (*Espolsa-sac*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Delphinium (*Espolsa-sac*)</h3>
+                        <p>Altes espigues blaves o liles molt elegants.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=delphinium+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Annual_report_of_the_Bureau_of_American_Ethnology_to_the_Secretary_of_the_Smithsonian_Institution_%28IA_annualreportofbu172smit%29.pdf" alt="Lupinus (*Llopí*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Annual_report_of_the_Bureau_of_American_Ethnology_to_the_Secretary_of_the_Smithsonian_Institution_%28IA_annualreportofbu1921smit%29.pdf" alt="Lupinus (*Llopí*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Yamaha_BW%27s_with_Flower.jpg" alt="Lupinus (*Llopí*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Lupinus (*Llopí*)</h3>
+                        <p>Flors en espiga molt vistoses que enriqueixen el sòl.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=lupinus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Bee-Balm-flower_%286205924794%29.gif" alt="Monarda (*Bee Balm*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Close_bee_balm.jpg" alt="Monarda (*Bee Balm*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Red_Bee_Balm.jpg" alt="Monarda (*Bee Balm*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Monarda (*Bee Balm*)</h3>
+                        <p>Flors exòtiques que encanten als pol·linitzadors.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=monarda+didyma+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Astrantia_major_Mitterbach_01.JPG" alt="Astrantia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Bloem_van_een_Astrantia_major_%27Roma%27._24-06-2021_%28actm.%29_01.jpg" alt="Astrantia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Bloem_van_een_Astrantia_major_%27Roma%27._24-06-2021_%28actm.%29_02.jpg" alt="Astrantia" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Astrantia</h3>
+                        <p>Petites boles de flors molt detallades.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=astrantia+major+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Echinacea_purpurea%2C_Jard%C3%ADn_Bot%C3%A1nico%2C_M%C3%BAnich%2C_Alemania%2C_2013-09-08%2C_DD_01.jpg" alt="Echinacea" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Monarch_Butterfly_Danaus_plexippus_on_Echinacea_purpurea_2800px.jpg" alt="Echinacea" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Yellow_Coneflower_Echinacea_paradoxa_Twisted_Pair_DoF_2000px.jpg" alt="Echinacea" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Echinacea</h3>
+                        <p>Flor medicinal i preciosa que aguanta molt bé el sol.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=echinacea+purpurea+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Bloem_van_een_Rudbeckia_fulgida._02-09-2020_%28d.j.b.%29_01.jpg" alt="Rudbeckia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Bloemknop_van_een_Rudbeckia_fulgida._24-08-2023_%28actm.%29_02.jpg" alt="Rudbeckia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Sonnenhut_%28Rudbeckia%29_Raureif-20241201-RM-103828.jpg" alt="Rudbeckia" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Rudbeckia</h3>
+                        <p>Com margarides grogues amb el centre negre. Molt alegres.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=rudbeckia+hirta+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/0_Pieris_rapae_%26_Pyronia_tithonus_-_Agastache_foeniculum_-_Havr%C3%A9.jpg" alt="Agastache" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/0_Pieris_rapae_-_Agastache_foeniculum_-_Havr%C3%A9_%281%29.jpg" alt="Agastache" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Agastace_foeniculum_WPC.jpg" alt="Agastache" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Agastache</h3>
+                        <p>Aromàtica amb flors en espiga molt resistents.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=agastache+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Penstemon_digitalis%2C_2020-06-21%2C_Kane_Woods%2C_02.jpg" alt="Penstemon" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Penstemon_digitalis%2C_2023-06-10%2C_South_Side%2C_02.jpg" alt="Penstemon" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Penstemon_digitalis1.jpg" alt="Penstemon" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Penstemon</h3>
+                        <p>Flors en forma de tub, molt cridaneres.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=penstemon+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Bombus_rupestris_-_Centaurea_scabiosa_-_Keila2.jpg" alt="Scabiosa" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Pincushion_flower_--_Scabiosa.jpg" alt="Scabiosa" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Scabiosa_atropurpurea%2C_flower%2C_S%C3%A8te_01.jpg" alt="Scabiosa" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Scabiosa</h3>
+                        <p>Flors rodones que semblen mini caps de tija.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=scabiosa+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/%27Veronicastrum_virginicum%27_Album%2C_Culvers_root_-_West_Garden%2C_Hatfield_House%2C_Hertfordshire%2C_England.jpg" alt="Veronicastrum" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Veronicastrum_virginicum_kz02.jpg" alt="Veronicastrum" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Veronicastrum_virginicum_kz05.jpg" alt="Veronicastrum" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Veronicastrum</h3>
+                        <p>Espigues fines i altes, molt arquitectura.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=veronicastrum+virginicum+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Aconitum_carmichaelii_var._wilsonii_002.JPG" alt="Aconitum" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bombox_sp._%28bumblebee%29_feeding_deep_within_aconitum_flower.jpg" alt="Aconitum" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Monnikskap_%28Aconitum%29%2C_07-09-2024._%28actm.%29.jpg" alt="Aconitum" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Aconitum</h3>
+                        <p>Flor blava molt intensa (compte, és tòxica si es menja).</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=aconitum+napellus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Anemone_hupehensis_var._japonica_1.jpg" alt="Anèmone japonesa" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Camellia_japonica-anemone.jpg" alt="Anèmone japonesa" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Anèmone japonesa</h3>
+                        <p>Floració de finals d'estiu/tardor, però es planta ara.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=anemone+japonica+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Rue_Anemone_Thalictrum_thalictroides_Flower_2479px.jpg" alt="Thalictrum" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Thalictrum_dasycarpum.png" alt="Thalictrum" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Thalictrum_dasycarpum_male_flowers.jpg" alt="Thalictrum" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Thalictrum</h3>
+                        <p>Flors que semblen núvols liles o blancs.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=thalictrum+aquilegifolium+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Trollius_europaeus_Spechtensee_02.JPG" alt="Trollius" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Trollius_europaeus_flower_-_Keila.jpg" alt="Trollius" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Trollius_europaeus_seed_head_-_Keila.jpg" alt="Trollius" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Trollius</h3>
+                        <p>Com ranuncles però més de muntanya.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=trollius+europaeus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Bloem_van_een_schijnpapaver_%28Meconopsis_cambrica%29_23-05-2021._%28d.j.b%29.jpg" alt="Meconopsis (*Rosella blava*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Meconopsis_%27Slieve_Donard%27_-_Chelsea_Flower_Show_2024_-_DSC02592.jpg" alt="Meconopsis (*Rosella blava*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Schijnpapaver_%28Meconopsis_cambrica%29_23-06-2024._%28actm.%29_02.jpg" alt="Meconopsis (*Rosella blava*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Meconopsis (*Rosella blava*)</h3>
+                        <p>Una de les flors més rares i boniques (blau cel).</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=meconopsis+betonicifolia+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Ligularia_dentata.jpg" alt="Ligularia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Ligularia_dentata_Desdemona20150930_4044.jpg" alt="Ligularia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Ligularia_dentata_Desdemona20200210_16595.jpg" alt="Ligularia" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Ligularia</h3>
+                        <p>Grans fulles i espigues de flors grogues.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=ligularia+dentata+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Haiti-_Her_History_and_Her_Detractors.djvu" alt="Chelone (*Cap de tortuga*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Howard_Pyle%27s_Book_of_Pirates_%281921%29.djvu" alt="Chelone (*Cap de tortuga*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Intervention-_the_Americans_in_Haiti%2C_1915-1934._%28IA_interventionamer00schr%29.pdf" alt="Chelone (*Cap de tortuga*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Chelone (*Cap de tortuga*)</h3>
+                        <p>Flors roses molt curioses que semblen boques de tortuga.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=chelone+obliqua+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/A_synoptical_compend_of_British_botany_..._arranged_after_the_Linnean_system_%28IA_b29288459%29.pdf" alt="Physostegia (*Flor obedient*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Hand-book_of_Indian_flora%3B_being_a_guide_to_all_the_flowering_plants_hitherto_described_as_indigenous_to_the_continent_of_India_%28IA_cu31924000608475%29.pdf" alt="Physostegia (*Flor obedient*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Hand_Book_Of_The_Indian_Flora_Vol_I_%28IA_handbookoftheind031933mbp%29.pdf" alt="Physostegia (*Flor obedient*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Physostegia (*Flor obedient*)</h3>
+                        <p>Anomenada així perquè si mous la flor es queda on la deixes.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=physostegia+virginiana+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="zone-section" id="zone2">
+            <h2 class="zone-title">ZONA 3: LLUM TOT EL DIA (Sol ple)</h2>
+            <div class="grid">
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/%28MHNT%29_Bombus_pascuorum_on_Lavandula_angustifolia.jpg" alt="Lavanda (*Lavandula angustifolia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Lavandula_angustifolia_-_lavender_-_Lavendel_-_01.jpg" alt="Lavanda (*Lavandula angustifolia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Vanessa_cardui_on_Lavandula_angustifolia-2459.jpg" alt="Lavanda (*Lavandula angustifolia*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Lavanda (*Lavandula angustifolia*)</h3>
+                        <p>L'aroma per excel·lència del Mediterrani. Atreu pol·linitzadors.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=lavandula+angustifolia+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Rosmarinus_officinalis133095382.jpg" alt="Romaní (*Rosmarinus officinalis*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Rosmarinus_officinalis2.jpg" alt="Romaní (*Rosmarinus officinalis*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Rosmarinus_officinalis3.jpg" alt="Romaní (*Rosmarinus officinalis*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Romaní (*Rosmarinus officinalis*)</h3>
+                        <p>Molts resistent, amb una flor blava molt fina a la primavera.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=rosmarinus+officinalis+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Bambi_3.jpg" alt="Petúnia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/HMS_Petunia_%28cleanup%29.jpg" alt="Petúnia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/HMS_petunia.jpg" alt="Petúnia" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Petúnia</h3>
+                        <p>Color constant durant mesos. Molt fàcil de cuidar.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=petunia+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Zinnia_elegans_04.jpg" alt="Zínnia (*Zinnia elegans*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Zinnia_elegans_with_Bombus_01.JPG" alt="Zínnia (*Zinnia elegans*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Zinnienbl%C3%BCte_Zinnia_elegans_stack15_20190722-RM-7222254.jpg" alt="Zínnia (*Zinnia elegans*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Zínnia (*Zinnia elegans*)</h3>
+                        <p>Flors amb formes geomètriques i colors molt intensos.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=zinnia+elegans+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Helianthus_annuusPFP.jpg" alt="Girasol (*Helianthus annuus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Helianthus_annuus_00064.jpg" alt="Girasol (*Helianthus annuus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Helianthus_annuus_FR_2010.jpg" alt="Girasol (*Helianthus annuus*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Girasol (*Helianthus annuus*)</h3>
+                        <p>Aporta verticalitat i alegria. Ideal per al final de primavera.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=helianthus+annuus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/%28MHNT%29_Gazania_rigens_Flower_and_Buttons.jpg" alt="Gazània (*Gazania rigens*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Gazania_rigens-1.jpg" alt="Gazània (*Gazania rigens*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Gazania_rigens_cultivar_in_Conques.jpg" alt="Gazània (*Gazania rigens*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Gazània (*Gazania rigens*)</h3>
+                        <p>Es tanquen a la nit i s'obren amb el sol. Molt resistents a la sequera.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=gazania+rigens+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Bloemknop_van_een_goudsbloem_%28Calendula_officinalis%29_03-07-2020_%28d.j.b.%29_02.jpg" alt="Calèndula (*Calendula officinalis*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Ringelblume_%28Calendula_officinalis%29_Bl%C3%BCte_focus_stack-20220619-RM-165610.jpg" alt="Calèndula (*Calendula officinalis*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Zaaddoos_van_een_goudsbloem_%28Calendula_officinalis%29_11-09-2020_%28d.j.b.%29.jpg" alt="Calèndula (*Calendula officinalis*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Calèndula (*Calendula officinalis*)</h3>
+                        <p>D'un taronja brillant, té propietats medicinals i és molt forta.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=calendula+officinalis+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Tagetes_erecta_26122014_%282%29.jpg" alt="Clavell de moro (*Tagetes erecta*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Tagetes_erecta_26122014_%283%29.jpg" alt="Clavell de moro (*Tagetes erecta*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Tagetes_erecta_Mallika3.jpg" alt="Clavell de moro (*Tagetes erecta*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Clavell de moro (*Tagetes erecta*)</h3>
+                        <p>Protegeix l'hort de plagues i té una flor molt compacta.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=tagetes+erecta+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Hibiscus_%28Hibiscus_syriacus%29.jpg" alt="Hibisc (*Hibiscus syriacus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Hibiscus_%28Hibiscus_syriacus%29_et_bourdon_%28Bombus%29_%282%29.jpg" alt="Hibisc (*Hibiscus syriacus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Hibiscus_syriacus1.JPG" alt="Hibisc (*Hibiscus syriacus*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Hibisc (*Hibiscus syriacus*)</h3>
+                        <p>Arbust amb grans flors que recorden a zones tropicals.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=hibiscus+syriacus+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Nerium_oleander_pink.jpg" alt="Baladre (*Nerium oleander*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Nerium_oleander_pink_flower%2C_Alex_005.jpg" alt="Baladre (*Nerium oleander*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Oleanderbl%C3%BCten_2011.JPG" alt="Baladre (*Nerium oleander*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Baladre (*Nerium oleander*)</h3>
+                        <p>Extremadament resistent, floració abundant. (Compte, tòxic).</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=nerium+oleander+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Buguenv%C3%ADl%C2%B7lea_al_carrer_Montg%C3%B3%2C_Gata.jpg" alt="Buguenvíl·lea" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Buguenv%C3%ADl%C2%B7lea_per_la_Creu%2C_Senija.jpg" alt="Buguenvíl·lea" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Buguenvíl·lea</h3>
+                        <p>Explosió de color en parets i tanques al sol.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=bougainvillea+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/LantanaFlowerLeaves.jpg" alt="Lantana (*Lantana camara*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Lantana_camara2870.jpg" alt="Lantana (*Lantana camara*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Twin_lantana_camara_edit.jpg" alt="Lantana (*Lantana camara*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Lantana (*Lantana camara*)</h3>
+                        <p>Flors que canvien de color en el mateix pom. Aguanta tot el que li tiris.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=lantana+camara+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Glandularia_%C3%97_hybrida.jpg" alt="Verbena (*Verbena hybrida*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Verbena_hybrida%E2%80%93IMG_6604_02.jpg" alt="Verbena (*Verbena hybrida*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/%E7%BE%8E%E5%A5%B3%E6%AB%BB_Verbena_Hybrida_-_panoramio.jpg" alt="Verbena (*Verbena hybrida*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Verbena (*Verbena hybrida*)</h3>
+                        <p>Poms de flors petites molt colorides. Ideal per a rocalles.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=verbena+hybrida+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Coreopsis_FR_2012.jpg" alt="Coreopsis" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Coreopsis_lanceolata_-_flower_view_02.jpg" alt="Coreopsis" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Coreopsis_lanceolata_Sterntaler.JPG" alt="Coreopsis" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Coreopsis</h3>
+                        <p>Margarides grogues o bicolors que floreixen sense parar.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=coreopsis+grandiflora+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Gaillardia_fanfare_centered.jpg" alt="Gaillardia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Hoverfly_cockade_stack-20190809-RM-064310.jpg" alt="Gaillardia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Kokardenblume_Gaillardia_aristata_stack28_20190721-RM-7210879.jpg" alt="Gaillardia" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Gaillardia</h3>
+                        <p>Flors amb aspecte de foc (vermell i groc). Molt rústica.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=gaillardia+aristata+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Bloeiwijze_van_Aster_x_frikartii_%27M%C3%B6nch%27._Locatie%2C_Tuinreservaat_Jonkervallei_02.jpg" alt="Aster" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Bloem_van_een_herfstaster._30-09-2021._%28d.j.b%29.jpg" alt="Aster" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Thymelicus_lineola_on_aster_MD1.jpg" alt="Aster" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Aster</h3>
+                        <p>Estrelles de color lila o blanc a ple sol.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=aster+alpinus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Chrysanthemum.jpg" alt="Crisantem" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Chrysanthemum_Plant_%281%29_06.jpg" alt="Crisantem" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Chrysanthemums.jpg" alt="Crisantem" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Crisantem</h3>
+                        <p>Típics de tardor però n'hi ha varietats de primavera precioses.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=chrysanthemum+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/African_Cape_Daisy_%28Osteospermum_barberiae%29.jpg" alt="Margarida del Cap (*Osteospermum*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/African_daisy_%28Osteospermum_sp._%27Pink_Whirls%27%29.jpg" alt="Margarida del Cap (*Osteospermum*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Osteospermum_Flower_Power_Spider_Purple_2134px.jpg" alt="Margarida del Cap (*Osteospermum*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Margarida del Cap (*Osteospermum*)</h3>
+                        <p>Margarides de colors impossibles que estimen el sol.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=osteospermum+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Pelargonium_Peltatum.JPG" alt="Gitaneta (*Pelargonium peltatum*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Pelargonium_peltatum_flower.jpg" alt="Gitaneta (*Pelargonium peltatum*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Pelargonium_peltatum_kz1.jpg" alt="Gitaneta (*Pelargonium peltatum*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Gitaneta (*Pelargonium peltatum*)</h3>
+                        <p>El gerani penjant clàssic dels balcons del sud, però al sol.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=pelargonium+peltatum+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Pelargonium_zonale_%28Geraniaceae%29.jpg" alt="Malva-rosa (*Pelargonium zonale*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Pelargonium_zonale_flowerdiagram.png" alt="Malva-rosa (*Pelargonium zonale*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Staande_geranium_Pelargonium_zonale_wit._20-06-2025._%28actm.%29_02.jpg" alt="Malva-rosa (*Pelargonium zonale*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Malva-rosa (*Pelargonium zonale*)</h3>
+                        <p>Gerani amb fulles arrodonides i flors en pom molt de sol.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=pelargonium+zonale+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Portulaca_oleracea.JPG" alt="Verdolaga de flor (*Portulaca*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Portulaca_oleracea_MHNT.jpg" alt="Verdolaga de flor (*Portulaca*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Yellow_Portulaca_flower_in_sunshine%2C_on_black_background.jpg" alt="Verdolaga de flor (*Portulaca*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Verdolaga de flor (*Portulaca*)</h3>
+                        <p>Cobreix el terra amb flors que semblen mini roses.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=portulaca+grandiflora+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Cosmos_bipinnatus_%28flowers%29_01.jpg" alt="Cosmos" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Cosmos_bipinnatus_%28flowers%29_03.jpg" alt="Cosmos" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Cosmos_bipinnatus_Bl%C3%BCte-20230819-RM-123333.jpg" alt="Cosmos" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Cosmos</h3>
+                        <p>Flors altes i fines que es mouen amb la brisa. Molt silvestres.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=cosmos+bipinnatus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/DahliaDahlstarSunsetPink.jpg" alt="Dàlia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Dahlia_%27Bishop_of_Auckland.JPG" alt="Dàlia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Dahlia_%27Moonfire%27_006.JPG" alt="Dàlia" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Dàlia</h3>
+                        <p>Flors amb milers de pètals, molt elegants per a rams.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=dahlia+bulbos" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/20140627Antirrhinum_majus5.jpg" alt="Conillet (*Antirrhinum majus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Antirrhinum_majus_San_Antonio.jpg" alt="Conillet (*Antirrhinum majus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Antirrhinum_majus_full_MichaD.jpg" alt="Conillet (*Antirrhinum majus*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Conillet (*Antirrhinum majus*)</h3>
+                        <p>Flors que pots "obrir" pressionant els costats. Molt clàssic.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=antirrhinum+majus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pentas-lanceolata-from-kottayam-kerala.jpg" alt="Pentas" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Pentas_lanceolata_%27Butterfly_Deep_Pink%27.jpg" alt="Pentas" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Pentas_lanceolata_Flowers.JPG" alt="Pentas" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Pentas</h3>
+                        <p>Flors en forma d'estrella que atreuen papallones.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=pentas+lanceolata+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="zone-section" id="zone3">
+            <h2 class="zone-title">ZONA 4: ARRECERADES DEL VENT (Racons protegits)</h2>
+            <div class="grid">
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Paeonia_%27First_Arrival%27_Flower.JPG" alt="Peònia (*Paeonia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Paeonia_caucasica.jpg" alt="Peònia (*Paeonia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Paeonia_lactiflora_flower_bouquet.jpg" alt="Peònia (*Paeonia*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Peònia (*Paeonia*)</h3>
+                        <p>Flors espectaculars i molt romàntiques. Necessiten calma.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=peonia+bulbos" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Lilium_martagon_Tauerntal_01.jpg" alt="Lliri (*Lilium*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Lilium_martagon_mit_Rutpela_maculata_01.JPG" alt="Lliri (*Lilium*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Lily_Lilium_%27Citronella%27_Flower.jpg" alt="Lliri (*Lilium*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Lliri (*Lilium*)</h3>
+                        <p>Elegància vertical. Molt fragants.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=lilium+bulbos" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Gladiolus_dalenii_bud_Ooty_Jul25_A7CR_06162-81_zsp.jpg" alt="Gladiol (*Gladiolus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Gladiolus_dalenii_flower_Ooty_Jul25_A7CR_06187-224_zsp.jpg" alt="Gladiol (*Gladiolus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Gladiolus_red_02.jpg" alt="Gladiol (*Gladiolus*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Gladiol (*Gladiolus*)</h3>
+                        <p>Espigues altes de colors variats. Ideals per a racons assolellats però sense vent.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=gladiolo+bulbos" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Edelwicke_%28Lathyrus_odoratus%29_Bl%C3%BCte_focus_stack-20200628-RM-175552.jpg" alt="Pèsol d'olor (*Lathyrus odoratus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Lathyrus_odoratus2.jpg" alt="Pèsol d'olor (*Lathyrus odoratus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Lathyrus_odoratus4.jpg" alt="Pèsol d'olor (*Lathyrus odoratus*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Pèsol d'olor (*Lathyrus odoratus*)</h3>
+                        <p>Enfiladissa anual molt fragant i delicada.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=lathyrus+odoratus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/2020_year._Herbarium._Ranunculus_acris._img-006.jpg" alt="Ranuncle (*Ranunculus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Thricops_semicinereus_on_Ranunculus_acris.jpg" alt="Ranuncle (*Ranunculus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Thricops_semicinereus_on_Ranunculus_acris_diagonal.jpg" alt="Ranuncle (*Ranunculus*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Ranuncle (*Ranunculus*)</h3>
+                        <p>Flors amb moltes capes de pètals que semblen paper de seda.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=ranunculo+bulbos" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Alstroemeria_aurantiaca.jpg" alt="Astromèlia (*Alstroemeria*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Bloem_van_een_Alstroemeria_aurea._03-07-2021_%28actm.%29.jpg" alt="Astromèlia (*Alstroemeria*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Zaaddozen_van_een_Alstroemeria_aurea_26-07-2020_%28d.j.b.%29_01.jpg" alt="Astromèlia (*Alstroemeria*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Astromèlia (*Alstroemeria*)</h3>
+                        <p>Coneguda com el lliri dels Inques. Flors duradores.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=alstroemeria+bulbos" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Eustoma_grandiflorum-hrs-yercaud-salem-India.JPG" alt="Lisianthus (*Eustoma grandiflorum*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Eustoma_grandiflorum_purple_02.jpg" alt="Lisianthus (*Eustoma grandiflorum*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Lisianthus_grandiflorum_Forever_Blue_4zz.jpg" alt="Lisianthus (*Eustoma grandiflorum*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Lisianthus (*Eustoma grandiflorum*)</h3>
+                        <p>Semblen roses però més delicades. Colors pastís.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=eustoma+grandiflorum+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Gypsophila_paniculata.jpg" alt="Paniculada (*Gypsophila*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Gypsophila_paniculata_sl32.jpg" alt="Paniculada (*Gypsophila*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Gypsophila_paniculata_%C5%81yszczec_wiechowaty_2020-09-20_02.jpg" alt="Paniculada (*Gypsophila*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Paniculada (*Gypsophila*)</h3>
+                        <p>Núvols de floretes blanques, típiques de ram de nuvia.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=gypsophila+paniculata+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Ammi_majus_002.JPG" alt="Encaix de reina (*Ammi majus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Ammi_majus_sl40.jpg" alt="Encaix de reina (*Ammi majus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Ammi_majus_sl41.jpg" alt="Encaix de reina (*Ammi majus*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Encaix de reina (*Ammi majus*)</h3>
+                        <p>Flors blanques en paraigua, molt etèries.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=ammi+majus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Coquelicot_%28Papaver_rhoeas%29.jpg" alt="Rosella (*Papaver rhoeas*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Papaver_rhoeas_2017_G1.jpg" alt="Rosella (*Papaver rhoeas*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Papaver_rhoeas_RF.jpg" alt="Rosella (*Papaver rhoeas*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Rosella (*Papaver rhoeas*)</h3>
+                        <p>Símbol del camp. Pètals vermells que cauen fàcilment amb el vent fort.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=papaver+rhoeas+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/20220715_Centaurea_cyanus.jpg" alt="Blavet (*Centaurea cyanus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Centaurea_cyanus_-_Keila.jpg" alt="Blavet (*Centaurea cyanus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Centaurea_cyanus_RF.jpg" alt="Blavet (*Centaurea cyanus*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Blavet (*Centaurea cyanus*)</h3>
+                        <p>Flor silvestre de color blau intens.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=centaurea+cyanus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/20160805Nigella_damascena5.jpg" alt="Cabells de Venus (*Nigella damascena*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Jungfer_im_Gr%C3%BCnen_%28Nigella_damascena%29_Samenkapseln-20220613-RM-175240.jpg" alt="Cabells de Venus (*Nigella damascena*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Nigella_damascena_2012.jpg" alt="Cabells de Venus (*Nigella damascena*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Cabells de Venus (*Nigella damascena*)</h3>
+                        <p>Flor envoltada d'un fullatge molt fi i elegant.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=nigella+damascena+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Clarkia_amoena%2C_Godetia%2C_Forest-M.%2C_80-Fr.jpg" alt="Clarkia amoena" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Clarkia_amoena_grown_in_garden.jpg" alt="Clarkia amoena" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Clarkia_amoena_subsp._lindleyi.jpg" alt="Clarkia amoena" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Clarkia amoena</h3>
+                        <p>Flors de colors rosats que semblen setí.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=clarkia+amoena+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Godetia_grandiflora_2021-07-30_9584.jpg" alt="Godetia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/HMS_Godetia_Ii_FL6058.jpg" alt="Godetia" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/HMS_Jonquil_%28K68%29_IWM_FL_22394.jpg" alt="Godetia" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Godetia</h3>
+                        <p>Flors grans i vistoses de primavera.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=godetia+grandiflora+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/P1000495_Schizanthus_pinnatus_%28Poor_Man%27s_Orchid%29_%28Solanaceae%29_Flower.JPG" alt="Flor de papallona (*Schizanthus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Schizanthus_pinnatus.jpg" alt="Flor de papallona (*Schizanthus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Schizanthus_pinnatus_%28Solanaceae%29_flower.JPG" alt="Flor de papallona (*Schizanthus*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Flor de papallona (*Schizanthus*)</h3>
+                        <p>Cridanera i amb patrons de colors complexos.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=schizanthus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Flower%2C_Nemophila_%22Pennie_Black%22_-_Flickr_-_nekonomania.jpg" alt="Baby blue eyes (*Nemophila*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Nemophila_flower_fields_%2851847121931%29.jpg" alt="Baby blue eyes (*Nemophila*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Nemophila_flower_fields_%2851847182428%29.jpg" alt="Baby blue eyes (*Nemophila*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Baby blue eyes (*Nemophila*)</h3>
+                        <p>Petites flors d'un blau cel pur, molt baixes i delicades.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=nemophila+menziesii+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Ipomee_tricolor.JPG" alt="Morning glory (*Ipomoea tricolor*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Ipomoea_tricolor_Wilted_2000px.jpg" alt="Morning glory (*Ipomoea tricolor*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Ipomoea_tricolor_flower.JPG" alt="Morning glory (*Ipomoea tricolor*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Morning glory (*Ipomoea tricolor*)</h3>
+                        <p>Enfiladissa amb flors en forma de trompeta que s'obren al matí.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=ipomoea+tricolor+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Thunbergia_grandiflora_%2870181%29.jpg" alt="Ulls de poeta (*Thunbergia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Thunbergia_grandiflora_%2870184%29.jpg" alt="Ulls de poeta (*Thunbergia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Thunbergia_grandiflora_-_Bengal_Clock_Vine_at_Palappuzha_%281%29.jpg" alt="Ulls de poeta (*Thunbergia*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Ulls de poeta (*Thunbergia*)</h3>
+                        <p>Ideal per a testos penjants en zones sense vent.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=thunbergia+alata+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Mandevilla_Flower.jpg" alt="Dipladenia (*Mandevilla*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Mandevilla_Laxa_Flower.jpg" alt="Dipladenia (*Mandevilla*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/SW24-24-Z-Mandevilla_laxa_near_University_Zurich.jpg" alt="Dipladenia (*Mandevilla*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Dipladenia (*Mandevilla*)</h3>
+                        <p>Flors grans i brillants. No li agrada el fred intens ni el vent.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=dipladenia+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Stephanotis_floribunda_Flower_Closeup_TorreLaMata.jpg" alt="Jazmín de Madagascar (*Stephanotis*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Stephanotis_floribunda_variegata_11.JPG" alt="Jazmín de Madagascar (*Stephanotis*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Stephanotis_flowers.jpg" alt="Jazmín de Madagascar (*Stephanotis*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Jazmín de Madagascar (*Stephanotis*)</h3>
+                        <p>Flors blanques ceroses amb molta fragància.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=stephanotis+floribunda+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Hoya_carnosa.jpeg" alt="Flor de cera (*Hoya carnosa*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Hoya_carnosa1.jpeg" alt="Flor de cera (*Hoya carnosa*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Hoya_carnosa2.jpeg" alt="Flor de cera (*Hoya carnosa*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Flor de cera (*Hoya carnosa*)</h3>
+                        <p>Planta de creixement lent amb flors que semblen porcellana.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=hoya+carnosa+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Passiflora_caerulea_%28makro_close-up%29.jpg" alt="Flor de la passió (*Passiflora*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Passiflora_caerulea_STEREO_%28R-L%29_2019-06-27.jpg" alt="Flor de la passió (*Passiflora*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Passion_Vine_NBG_LR.jpg" alt="Flor de la passió (*Passiflora*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Flor de la passió (*Passiflora*)</h3>
+                        <p>Complexitat visual única. Necessita suport i protecció.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=passiflora+caerulea+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Ballonblume_platycodon_grandiflorus_%282013-07-12_Sp%29.jpg" alt="Platycodon" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Platycodon_grandiflorum2.jpg" alt="Platycodon" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Platycodon_grandiflorus_in_Jardin_botanique_de_la_Charme.jpg" alt="Platycodon" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Platycodon</h3>
+                        <p>Coneguda com la flor "globus" abans d'obrir-se.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=platycodon+grandiflorus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Mimulus_alsinoides_2402f.JPG" alt="Flor de mico (*Mimulus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Mimulus_ringens_flower.JPG" alt="Flor de mico (*Mimulus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Yellow_and_purple_monkey_flower_mimulus_ringens.jpg" alt="Flor de mico (*Mimulus*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Flor de mico (*Mimulus*)</h3>
+                        <p>Flors amb taques i colors molt vius. Li agrada la humitat.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=mimulus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Sinningia_cardinalis_%283103280237%29.jpg" alt="Gloxinia (*Sinningia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Sinningia_cardinalis_%283104110842%29.jpg" alt="Gloxinia (*Sinningia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Sinningia_cardinalis_flower_size.jpg" alt="Gloxinia (*Sinningia*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Gloxinia (*Sinningia*)</h3>
+                        <p>Flors acampanades i vellutades de gran bellesa.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=gloxinia+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="zone-section" id="zone4">
+            <h2 class="zone-title">ZONA 5: EXPOSADES AL VENT (Zona oberta)</h2>
+            <div class="grid">
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/%28MHNT%29_Oenothera_lindheimeri.jpg" alt="Gaura (*Gaura lindheimeri*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Gaura_lindheimeri%2C_prachtkaars._%28actm%29_01.jpg" alt="Gaura (*Gaura lindheimeri*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Gaura_lindheimeri_Whirling_Butterflies.jpg" alt="Gaura (*Gaura lindheimeri*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Gaura (*Gaura lindheimeri*)</h3>
+                        <p>Tiges fines que es mouen amb el vent sense trencar-se. Flors com papallones.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=gaura+lindheimeri+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Atylotus_rusticus_%28male%29_-_Achillea_millefolium_-_Valingu.jpg" alt="Milfulles (*Achillea millefolium*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Misumena_vatia_on_Achillea_millefolium_qtl2.jpg" alt="Milfulles (*Achillea millefolium*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Yarrow_%28Achillea_millefolium%29.jpg" alt="Milfulles (*Achillea millefolium*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Milfulles (*Achillea millefolium*)</h3>
+                        <p>Flor de camp molt resistent, amb paraigües florals de colors.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=achillea+millefolium+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/20230519_Gew%C3%B6hnliche_Grasnelke_%28Armeria_maritima%29.jpg" alt="Herba de l'enamorat (*Armeria maritima*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Armeria_maritima_subsp_elongata_RF.jpg" alt="Herba de l'enamorat (*Armeria maritima*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Armeria_maritima_subsp_maritima_RF.jpg" alt="Herba de l'enamorat (*Armeria maritima*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Herba de l'enamorat (*Armeria maritima*)</h3>
+                        <p>Forma coixins molt compactes i flors en bola. Molt rústica.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=armeria+maritima+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Bloem_van_een_muurfijnstraal_%28Erigeron_karvinskianus%29._13-06-2021._%28d.j.b%29.jpg" alt="Margarida de paret (*Erigeron karvinskianus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Erigeron_karvinskianus.JPG" alt="Margarida de paret (*Erigeron karvinskianus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Erigeron_karvinskianus7.jpg" alt="Margarida de paret (*Erigeron karvinskianus*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Margarida de paret (*Erigeron karvinskianus*)</h3>
+                        <p>Omple esquerdes i murs. Molt forta i floreix tot l'any a la nostra zona.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=erigeron+karvinskianus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Cistus_ladaniferFlor.jpg" alt="Estepa (*Cistus ladanifer*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Cistus_ladanifer_00.jpg" alt="Estepa (*Cistus ladanifer*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Cistus_ladanifer_7.jpg" alt="Estepa (*Cistus ladanifer*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Estepa (*Cistus ladanifer*)</h3>
+                        <p>Planta autòctona extremadament resistent. Flors grans amb taques.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=cistus+ladanifer+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Helichrysum_italicumIsola.jpg" alt="Curri (*Helichrysum italicum*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Helichrysum_italicum_flowers.jpg" alt="Curri (*Helichrysum italicum*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Helichrysum_italicum%C3%8Eled%27Elbe.jpg" alt="Curri (*Helichrysum italicum*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Curri (*Helichrysum italicum*)</h3>
+                        <p>Fulles platejades i flors grogues. Aroma intensa i molt resistent al vent.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=helichrysum+italicum+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Santolina_chamaecyparissus_flowers.jpg" alt="Espernallac (*Santolina*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Santolina_rosmarinifolia_kz02.jpg" alt="Espernallac (*Santolina*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Santolina_rosmarinifolia_kz03.jpg" alt="Espernallac (*Santolina*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Espernallac (*Santolina*)</h3>
+                        <p>Aroma mediterrània. Forma boles compactes que aguanten qualsevol vendaval.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=santolina+chamaecyparissus+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Flowers_of_Centranthus_ruber.jpg" alt="Valeriana vermella (*Centranthus ruber*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Knop_van_spoorbloem_%28Centranthus_ruber%29_01.JPG" alt="Valeriana vermella (*Centranthus ruber*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Stomorhina_lunata_on_Centranthus_ruber.jpg" alt="Valeriana vermella (*Centranthus ruber*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Valeriana vermella (*Centranthus ruber*)</h3>
+                        <p>Creix fins i tot entre les pedres. Molt vivaç.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=centranthus+ruber+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Flower_of_Kniphofia_cultivar_%281%29.jpg" alt="Talla-focs (*Kniphofia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Flower_of_Kniphofia_cultivar_%283%29.jpg" alt="Talla-focs (*Kniphofia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Kniphofia_uvaria_einzeln.JPG" alt="Talla-focs (*Kniphofia*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Talla-focs (*Kniphofia*)</h3>
+                        <p>Estructures verticals molt robustes en forma de torxa.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=kniphofia+uvaria+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Nepeta_faassenii_katzenminze.jpg" alt="Nepeta (*Nepeta faassenii*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Nepeta_x_faassenii_-_automne_Jardin_des_Plantes.JPG" alt="Nepeta (*Nepeta faassenii*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Nepeta_%C3%97_faassenii_Kocimi%C4%99tka_Faassena_2019-05-17_01.jpg" alt="Nepeta (*Nepeta faassenii*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Nepeta (*Nepeta faassenii*)</h3>
+                        <p>Similar a l'espígol però amb floració més llarga i flexible.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=nepeta+faassenii+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Perovskia_%27Blue_Spire%27_02.JPG" alt="Sàlvia russa (*Perovskia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Perovskia_%27Blue_Spire%27_03.JPG" alt="Sàlvia russa (*Perovskia*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Perovskia_Filigran_%2815152593910%29.jpg" alt="Sàlvia russa (*Perovskia*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Sàlvia russa (*Perovskia*)</h3>
+                        <p>Planta de baix manteniment, poms liles molt etèries.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=perovskia+atriplicifolia+planta" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Limonium_lobatum.jpg" alt="Flor de paper (*Limonium*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Limonium_sinatum_%27Midnight_Blue%27_%28Plumbagnaceae%29_flower_zoom.JPG" alt="Flor de paper (*Limonium*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Limonium_vulgare_narbonense%2C_Vic-la-Gardiole.jpg" alt="Flor de paper (*Limonium*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Flor de paper (*Limonium*)</h3>
+                        <p>Flors que semblen seques des del principi. Molt resistents.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=limonium+sinuatum+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Bloeiwijze_van_Verbena_bonariensis._07-09-2024._%28d.j.b%29.jpg" alt="Verbena bonariensis" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Verbena_bonariensis%2C_bloeiwijze._28-08-2021._%28d.j.b%29_01.jpg" alt="Verbena bonariensis" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Verbena_bonariensis%2C_bloeiwijze._28-08-2021._%28d.j.b%29_02.jpg" alt="Verbena bonariensis" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Verbena bonariensis</h3>
+                        <p>Tiges altes però increïblement flexibles. Atreu moltes papallones.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=verbena+bonariensis+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Cerastium_arvense_5713.JPG" alt="Neu d'estiu (*Cerastium*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Cerastium_arvense_6363.JPG" alt="Neu d'estiu (*Cerastium*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Cerastium_arvense_RF.jpg" alt="Neu d'estiu (*Cerastium*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Neu d'estiu (*Cerastium*)</h3>
+                        <p>Mata baixa platejada que s'omple de floretes blanques.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=cerastium+tomentosum+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Lobularia_maritima043.JPG" alt="Alyssum (*Lobularia maritima*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Lobularia_maritima_2.jpg" alt="Alyssum (*Lobularia maritima*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Lobularia_maritima_Porto_Covo_2022-1.jpg" alt="Alyssum (*Lobularia maritima*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Alyssum (*Lobularia maritima*)</h3>
+                        <p>Olor a mel. Creix en catifes molt a l'abast del terra (evitant el vent).</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=lobularia+maritima+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Aubrieta_2023-04-21_2703.jpg" alt="Aubrieta" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Aubrieta_in_fiore.jpg" alt="Aubrieta" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Bee_fly_on_aubrieta_%28Aubrieta_deltoidea%29%2C_Sandy%2C_Bedfordshire_%286983526866%29.jpg" alt="Aubrieta" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Aubrieta</h3>
+                        <p>Mantes de color lila o rosat per a rocalles.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=aubrieta+deltoidea+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Iberis_sempervirens_-_fleurs.jpg" alt="Iberis sempervirens" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Iberis_sempervirens_flower_head.jpg" alt="Iberis sempervirens" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Iberis_sempervirens_inflorescence_4.jpg" alt="Iberis sempervirens" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Iberis sempervirens</h3>
+                        <p>Blanc pur. Molt compacte i resistent.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=iberis+sempervirens+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Phlox_Subulata.jpg" alt="Phlox de molsa (*Phlox subulata*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Phlox_subulata.JPG" alt="Phlox de molsa (*Phlox subulata*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Phlox_subulata.jpeg" alt="Phlox de molsa (*Phlox subulata*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Phlox de molsa (*Phlox subulata*)</h3>
+                        <p>Catifa de flors vibrant. Aguanta fred i vent.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=phlox+subulata+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Dianthus_carthusianorum_Neulengbach_20160611_01.jpg" alt="Clavellina (*Dianthus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Dianthus_chinensis.jpg" alt="Clavellina (*Dianthus*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Dianthus_chinensis_%C3%97_barbatus.jpg" alt="Clavellina (*Dianthus*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Clavellina (*Dianthus*)</h3>
+                        <p>Flor clàssica, molt aromàtica i extremadament dura.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=dianthus+gratianopolitanus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Tradescantia%2C_North_Carolina_Arboretum.jpg" alt="Festuca blava (*Festuca glauca*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Variation_in_production_and_seasonal_development_of_mountain_grasslands_in_western_Montana_%28IA_variationinprodu316mueg%29.pdf" alt="Festuca blava (*Festuca glauca*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Wholesale_catalogue_-_W.A._Manda_Inc._%28IA_CAT31378666%29.pdf" alt="Festuca blava (*Festuca glauca*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Festuca blava (*Festuca glauca*)</h3>
+                        <p>Gramínia rústica de color blau que aporta moviment sense riscs.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=festuca+glauca+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/A_List_of_plants_growing_without_cultivation_in_Malden_and_Medford%2C_Mass._-_with_some_contributions_to_a_flora_of_Middlesex_County_%28IA_listma00midd%29.pdf" alt="Stipa tenuissima" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Magazine_of_zoology_and_botany_%28IA_magazineofzo218371838selb%29.pdf" alt="Stipa tenuissima" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/XLVI.%E2%80%94A_List_of_Plants_Collected_by_Charles_Fellows%2C_Esq.%2C_During_his_Tour_in_Lycia_and_Caria%3B_with_Descriptions_of_the_New_Species_%28IA_biostor-94379%29.pdf" alt="Stipa tenuissima" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Stipa tenuissima</h3>
+                        <p>"Cabell d'àngel". Es mou rítmicament amb el vent. Preciosa.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=stipa+tenuissima+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/ECHINOPS_RITRO_-_MORROCURT_-_IB-523_%28Card_blau%29.JPG" alt="Echinops (*Card blau*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/New_remedies_-_with_formulae_for_their_administration_%28IA_101507035.nlm.nih.gov%29.pdf" alt="Echinops (*Card blau*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/New_remedies_-_with_formulae_for_their_administration_%28IA_newremedieswithf1851dung%29.pdf" alt="Echinops (*Card blau*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Echinops (*Card blau*)</h3>
+                        <p>Boles blaves metàl·liques molt rígides, impossibles de tombar.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=echinops+ritro+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Nuevo_compendio_te%C3%B3rico-pr%C3%A1ctico_de_la_gram%C3%A1tica_inglesa_-_Seguido_de_un_manual_de_conversaciones_muy_interes%C3%A1ntes_y_de_uso_corriente_en_sociedad_%28IA_aan4561.0001.001.umich.edu%29.pdf" alt="Eryngium (*Card de jardí*)" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Rosa_hybrida%2C_Carding_Mill%2C_Jardin_universitaire_Roger-Van_den_Hende_26.jpg" alt="Eryngium (*Card de jardí*)" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Eryngium (*Card de jardí*)</h3>
+                        <p>Belleza arquitectònica amb flors platejades/blaves.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=eryngium+variifolium+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Erigeron_speciosus_-_Kirkton_1909.png" alt="Erigeron speciosus" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Erigeron_speciosus_01.jpg" alt="Erigeron speciosus" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Erigeron_speciosus_Lindl._DC._%27Fleabane%27_%28Asteraceae%29_flower.JPG" alt="Erigeron speciosus" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Erigeron speciosus</h3>
+                        <p>Margarides lila molt abundants que aguanten bé l'exterior.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=erigeron+speciosus+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+                <div class="flower-card">
+                    <div class="image-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/1913_price_list_of_selected_high_grade_florists%27_flower_seeds_-_bulbs%2C_plants%2C_etc._%28IA_CAT31294492%29.pdf" alt="Limonium latifolium" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Favourite_flowers_of_garden_and_greenhouse_%2810593558324%29.jpg" alt="Limonium latifolium" loading="lazy"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/%E8%A3%9C%E8%A1%80%E8%8D%89%28%E6%83%85%E4%BA%BA%E8%8D%89%29_Limonium_latifolium_-%E9%A6%99%E6%B8%AF%E9%9D%92%E8%A1%A3%E5%B8%82%E9%8E%AE_Tsing_Yi_Town%2C_Hong_Kong-_%289198167947%29.jpg" alt="Limonium latifolium" loading="lazy">
+                    </div>
+                    <div class="content">
+                        <h3>Limonium latifolium</h3>
+                        <p>Poms de flors diminutes que semblen boira al sol.</p>
+                    </div>
+                    <a href="https://www.amazon.es/s?k=limonium+latifolium+semillas" target="_blank" class="buy-btn">Comprar a Amazon</a>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+    
