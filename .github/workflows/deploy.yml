@@ -11,14 +11,11 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: "desplegament-jardi"
   cancel-in-progress: true
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
